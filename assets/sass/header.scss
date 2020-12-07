@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Mono', monospace;
+}
+.menuNavigation { 
+    position:relative;
+    padding: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'IBM Plex Mono', monospace;
+
+}
+.menuNavigation_logo{
+    position: relative;
+    z-index: 2;
+}
+
+.menuNavigation_button{
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    position: relative; 
+    z-index: 2;
+}
+
+.menuNavigation_button:active{
+    transform: scale(1.1);
+}
+
+.menuNavigation_list{
+    background  : #0000EC;
+    margin:0;
+    position: absolute;
+    top: 44px; 
+    padding: 14px;
+    list-style: none;
+    width: 100vw;
+    left: 0;
+    z-index: 1; 
+}
+.menuNavigation_list li{
+    padding: 10px;
+}
+.menuNavigation_list li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+i.menuNavigation_buttonClose{
+    display: none;
+}
+
+#redirect:checked + .menuNavigation_button .label .menuNavigation_buttonClose{
+    display: block;
+}
+
+#redirect{
+    display: none;
+}
+
+#redirect:checked + .menuNavigation_button .label .menuNavigation_buttonOpen{
+        display: none;
+}
+
+.menuNavigation_list{
+    Display: none;
+}
+
+#redirect:checked + .menuNavigation_button + .menuNavigation_list{
+    display: block;
+}
+
+@media (min-width: 1024px){
+    .menuNavigation_list{
+        display: flex;
+        background-color: #fff;
+        position: relative;
+        top: 0px;
+        padding: 6px;
+        width: auto;
+        float: right; 
+  }
+  .menuNavigation_button{
+      display: none;
+  } 
+   .menuNavigation_buttonOpen{
+       display: none;
+   } 
+   .menuNavigation_list li a {
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    }
+    .menuNavigation_list li a:hover{
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 16px;
+        color: #00F3BB;
+        letter-spacing: 0;
+    }
+    .menuNavigation_buttonClose{
+    display: none;
+    }
+}

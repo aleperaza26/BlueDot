@@ -1,0 +1,341 @@
+* {
+  box-sizing: border-box; }
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM Plex Mono', monospace; }
+
+.menuNavigation {
+  position: relative;
+  padding: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'IBM Plex Mono', monospace; }
+
+.menuNavigation_logo {
+  position: relative;
+  z-index: 2; }
+
+.menuNavigation_button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 2; }
+
+.menuNavigation_button:active {
+  transform: scale(1.1); }
+
+.menuNavigation_list {
+  background: #0000EC;
+  margin: 0;
+  position: absolute;
+  top: 44px;
+  padding: 14px;
+  list-style: none;
+  width: 100vw;
+  left: 0;
+  z-index: 1; }
+
+.menuNavigation_list li {
+  padding: 10px; }
+
+.menuNavigation_list li a {
+  text-decoration: none;
+  color: #fff; }
+
+i.menuNavigation_buttonClose {
+  display: none; }
+
+#redirect:checked + .menuNavigation_button .label .menuNavigation_buttonClose {
+  display: block; }
+
+#redirect {
+  display: none; }
+
+#redirect:checked + .menuNavigation_button .label .menuNavigation_buttonOpen {
+  display: none; }
+
+.menuNavigation_list {
+  Display: none; }
+
+#redirect:checked + .menuNavigation_button + .menuNavigation_list {
+  display: block; }
+
+@media (min-width: 1024px) {
+  .menuNavigation_list {
+    display: flex;
+    background-color: #fff;
+    position: relative;
+    top: 0px;
+    padding: 6px;
+    width: auto;
+    float: right; }
+
+  .menuNavigation_button {
+    display: none; }
+
+  .menuNavigation_buttonOpen {
+    display: none; }
+
+  .menuNavigation_list li a {
+    text-decoration: none;
+    color: black;
+    padding: 30px; }
+
+  .menuNavigation_list li a:hover {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    color: #00F3BB;
+    letter-spacing: 0; }
+
+  .menuNavigation_buttonClose {
+    display: none; } }
+.helloworld {
+  display: flex;
+  flex-direction: column; }
+
+h1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 42px;
+  width: 280px;
+  padding: 10px; }
+  h1 #world {
+    text-decoration: line-through; }
+
+.texto_helloworld {
+  line-height: 22px;
+  margin: 0 5%;
+  font-size: 14px;
+  color: #060a24;
+  text-align: justify;
+  width: 90%;
+  font-family: "IBM Plex Mono", monospace;
+  margin-bottom: 30px; }
+
+.conocemas {
+  background-color: #00F3BB;
+  text-align: center;
+  width: 288px;
+  padding: 13px 0;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  color: #060A24; }
+
+.conocemas:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #ffff;
+  font-family: 'IBM Plex Mono', monospace; }
+
+@media (min-width: 1024px) {
+  .helloworld h1 {
+    font-size: 54px;
+    width: auto;
+    left: 0;
+    margin-left: 100px;
+    padding: 0;
+    margin-bottom: 15px; }
+  .helloworld .texto_helloworld {
+    width: 450px;
+    text-align: justify;
+    left: 0;
+    margin-left: 100px; }
+  .helloworld #dot {
+    color: #0000EC; } }
+.episodios {
+  font-family: 'IBM Plex Mono', monospace; }
+  .episodios .episodios_part1 {
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    width: 100%;
+    height: 1250px;
+    padding-top: 50px; }
+    .episodios .episodios_part1 .spotify h2 {
+      display: block;
+      color: #fff; }
+    .episodios .episodios_part1 .spotify .pc_episodio {
+      width: 95%;
+      margin: 10px 2.5%;
+      height: 232px; }
+  .episodios .episodios_part2 {
+    display: flex;
+    justify-content: center;
+    margin: auto; }
+    .episodios .episodios_part2 .phone {
+      position: absolute;
+      width: 300px;
+      height: 519px;
+      top: 1500px;
+      text-align: center; }
+    .episodios .episodios_part2 .dvenimos {
+      margin-top: 450px; }
+      .episodios .episodios_part2 .dvenimos .tt_venimos {
+        width: 200px;
+        margin-left: 5px;
+        font-family: 'IBM Plex Sans', sans-serif; }
+      .episodios .episodios_part2 .dvenimos .p_devenimos {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 14px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 22px;
+        width: 310px;
+        margin: auto; }
+
+@media (min-width: 768px) {
+  .episodios .episodios_part2 .phone {
+    width: 450px;
+    height: auto; }
+  .episodios .episodios_part2 .dvenimos {
+    margin-top: 650px; } }
+@media (min-width: 1024px) {
+  .episodios .episodios_part1 {
+    height: 800px; }
+    .episodios .episodios_part1 .spotify {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row; }
+      .episodios .episodios_part1 .spotify h2 {
+        width: 100%;
+        margin-left: 20px; }
+      .episodios .episodios_part1 .spotify .pc_episodio {
+        width: 40%;
+        margin: 10px 5%; }
+  .episodios .episodios_part2 {
+    justify-content: flex-end; }
+    .episodios .episodios_part2 .phone {
+      top: 980px;
+      left: 15%; }
+    .episodios .episodios_part2 .dvenimos {
+      margin-top: 150px;
+      margin-bottom: 300px;
+      margin-right: 6%;
+      font-size: 26px; }
+      .episodios .episodios_part2 .dvenimos .p_devenimos {
+        font-size: 24px;
+        width: 380px;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 24px; } }
+.invitados {
+  display: flex;
+  flex-direction: column; }
+  .invitados .tt_invitados {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 30px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    width: 90%;
+    margin: 9% 5% 3% 5%; }
+  .invitados .ft_invitados {
+    width: 100%; }
+
+@media (min-width: 1024px) {
+  .invitados {
+    flex-wrap: wrap;
+    flex-direction: row; }
+    .invitados .ft_invitados {
+      width: 33.3%; }
+    .invitados .tt_invitados {
+      width: 100%; } }
+.temas {
+  text-align: center; }
+  .temas h2 {
+    text-align: left;
+    width: 90%;
+    margin: 5%; }
+  .temas .div_temas div {
+    text-align: center; }
+
+@media (min-width: 1024px) {
+  .temas .div_temas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .temas .div_temas .conjunto {
+      text-align: center;
+      margin: 20px; } }
+.novedades {
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+  height: 300px;
+  width: 100%; }
+  .novedades .div_novedades {
+    padding-top: 100px;
+    color: #fff; }
+    .novedades .div_novedades .h2_novedades {
+      text-align: center;
+      width: 80%;
+      margin: auto;
+      padding: 15px; }
+
+.div_btn_novedades {
+  background-color: #00F3BB;
+  text-align: center;
+  width: 288px;
+  padding: 13px 0;
+  text-align: center;
+  margin: auto; }
+  .div_btn_novedades .btn_novedades {
+    text-decoration: none;
+    color: #060A24; }
+
+.div_btn_novedades:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%); }
+  .div_btn_novedades:hover .btn_novedades {
+    color: white; }
+
+footer {
+  display: flex;
+  flex-direction: column; }
+  footer .tt_footer {
+    text-align: center;
+    justify-content: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    width: 70.9%;
+    height: 1%;
+    margin: auto;
+    padding-top: 50px; }
+
+section .div_rrss {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-around;
+  width: 70%;
+  padding: 4%;
+  align-items: center; }
+  section .div_rrss i {
+    font-size: 20px;
+    text-decoration: none; }
+  section .div_rrss a {
+    text-decoration: none;
+    color: black; }
+
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap; } }
+html {
+  scroll-behavior: smooth; }
+
+/*# sourceMappingURL=main.css.map */

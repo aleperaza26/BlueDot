@@ -1,0 +1,57 @@
+.helloworld {
+  display: flex;
+  flex-direction: column; }
+
+h1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 42px;
+  width: 280px;
+  padding: 10px; }
+  h1 #world {
+    text-decoration: line-through; }
+
+.texto_helloworld {
+  line-height: 22px;
+  margin: 0 5%;
+  font-size: 14px;
+  color: #060a24;
+  text-align: justify;
+  width: 90%;
+  font-family: "IBM Plex Mono", monospace;
+  margin-bottom: 30px; }
+
+.conocemas {
+  background-color: #00F3BB;
+  text-align: center;
+  width: 288px;
+  padding: 13px 0;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  color: #060A24; }
+
+.conocemas:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #ffff;
+  font-family: 'IBM Plex Mono', monospace; }
+
+@media (min-width: 1024px) {
+  .helloworld h1 {
+    font-size: 54px;
+    width: auto;
+    left: 0;
+    margin-left: 100px;
+    padding: 0;
+    margin-bottom: 15px; }
+  .helloworld .texto_helloworld {
+    width: 450px;
+    text-align: justify;
+    left: 0;
+    margin-left: 100px; }
+  .helloworld #dot {
+    color: #0000EC; } }
+
+/*# sourceMappingURL=Top.css.map */

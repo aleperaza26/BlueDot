@@ -1,0 +1,11 @@
+@import "./header.scss";
+@import "./Top.scss";
+@import "./Episodios.scss";
+@import "./Invitados.scss";
+@import "./Temas.scss";
+@import "./novedades.scss";
+@import "./footer.scss";
+
+html{
+    scroll-behavior: smooth;
+}

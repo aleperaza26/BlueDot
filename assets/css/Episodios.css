@@ -1,0 +1,78 @@
+.episodios {
+  font-family: 'IBM Plex Mono', monospace; }
+  .episodios .episodios_part1 {
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    width: 100%;
+    height: 1250px;
+    padding-top: 50px; }
+    .episodios .episodios_part1 .spotify h2 {
+      display: block;
+      color: #fff; }
+    .episodios .episodios_part1 .spotify .pc_episodio {
+      width: 95%;
+      margin: 10px 2.5%;
+      height: 232px; }
+  .episodios .episodios_part2 {
+    display: flex;
+    justify-content: center;
+    margin: auto; }
+    .episodios .episodios_part2 .phone {
+      position: absolute;
+      width: 300px;
+      height: 519px;
+      top: 1500px;
+      text-align: center; }
+    .episodios .episodios_part2 .dvenimos {
+      margin-top: 450px; }
+      .episodios .episodios_part2 .dvenimos .tt_venimos {
+        width: 200px;
+        margin-left: 5px;
+        font-family: 'IBM Plex Sans', sans-serif; }
+      .episodios .episodios_part2 .dvenimos .p_devenimos {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 14px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 22px;
+        width: 310px;
+        margin: auto; }
+
+@media (min-width: 768px) {
+  .episodios .episodios_part2 .phone {
+    width: 450px;
+    height: auto; }
+  .episodios .episodios_part2 .dvenimos {
+    margin-top: 650px; } }
+@media (min-width: 1024px) {
+  .episodios .episodios_part1 {
+    height: 800px; }
+    .episodios .episodios_part1 .spotify {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row; }
+      .episodios .episodios_part1 .spotify h2 {
+        width: 100%;
+        margin-left: 20px; }
+      .episodios .episodios_part1 .spotify .pc_episodio {
+        width: 40%;
+        margin: 10px 5%; }
+  .episodios .episodios_part2 {
+    justify-content: flex-end; }
+    .episodios .episodios_part2 .phone {
+      top: 980px;
+      left: 15%; }
+    .episodios .episodios_part2 .dvenimos {
+      margin-top: 150px;
+      margin-bottom: 300px;
+      margin-right: 6%;
+      font-size: 26px; }
+      .episodios .episodios_part2 .dvenimos .p_devenimos {
+        font-size: 24px;
+        width: 380px;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 24px; } }
+
+/*# sourceMappingURL=Episodios.css.map */

@@ -1,0 +1,38 @@
+.novedades{
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);;
+    clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+    height: 300px;
+    width: 100%;
+    .div_novedades{
+        padding-top: 100px;
+        color: #fff;
+        .h2_novedades{
+            text-align: center;
+            width: 80%;
+            margin: auto;
+            padding: 15px;
+
+        }
+    }
+}
+
+.div_btn_novedades{
+    background-color:#00F3BB;
+    text-align: center;
+    width: 288px;
+    padding: 13px 0;
+    text-align: center;
+    margin: auto;
+   
+    .btn_novedades{
+        text-decoration: none;
+        color:#060A24;
+    }
+}
+.div_btn_novedades:hover{   
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    .btn_novedades{
+        color: white;
+    }
+ }
+     

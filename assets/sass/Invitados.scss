@@ -1,0 +1,31 @@
+.invitados{
+    display: flex;
+    flex-direction: column;
+    .tt_invitados{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 30px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        width: 90%;
+        margin: 9% 5% 3% 5%;
+        }
+    .ft_invitados{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px){
+   .invitados{
+       flex-wrap: wrap;
+        flex-direction: row;
+        .ft_invitados{
+            width: 33.3%;
+        }
+        .tt_invitados{
+            width: 100%;
+            }
+    }
+    
+    
+}

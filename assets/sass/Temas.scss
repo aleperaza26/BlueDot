@@ -1,0 +1,29 @@
+.temas{
+    text-align: center;
+    h2{
+        text-align: left;
+        width: 90%;
+        margin: 5%;
+    }
+    .div_temas{
+        div{
+            text-align: center;
+        }
+    }
+}
+@media (min-width: 1024px){
+    .temas{
+        
+        .div_temas{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center ;
+            
+            .conjunto{
+                text-align: center;
+                margin: 20px;
+            }
+        }
+
+    }
+}
